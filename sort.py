@@ -24,6 +24,17 @@ def quick_sort(array, i=None, j=None):
         quick_sort(array, pivot + 1, j)
 
 
+
+def insertion_sort(array):
+    for i in range(1, len(array)):
+        key = array[i]
+        j = i - 1
+        while j >= 0 and array[j] > key:
+            array[j + 1] = array[j]
+            j -= 1
+        array[j + 1] = key
+    return array
+
 def merge_sort(arr):
     if len(arr) > 1:
 
@@ -71,3 +82,4 @@ def bubble_sort(array):
         for j in range(0, n-i-1):
             if array[j] > array[j + 1] :
                 array[j], array[j + 1] = array[j + 1], array[j]
+
