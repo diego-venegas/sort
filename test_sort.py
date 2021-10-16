@@ -69,6 +69,5 @@ class TestSortingAlgorithms(unittest.TestCase):
         sort.merge_sort(a)
         self.assertEqual(a, [0, 0, 0, 0, 1, 1, 1, 1])
 
-
 if __name__ == '__main__':
     unittest.main()
